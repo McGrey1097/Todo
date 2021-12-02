@@ -6,10 +6,10 @@ import 'dart:ui';
 import 'package:todo/views/home_view.dart';
 
 void main() {
- runApp(MyApp());
-  }
+  runApp(MyApp());
+}
 
- class MyApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -17,12 +17,9 @@ void main() {
       debugShowCheckedModeBanner: false,
       title: 'Todo App',
       theme: ThemeData(
-        
         primarySwatch: Colors.cyan,
       ),
-    home: HomeView(),
+      home: HomeView(),
     );
   }
 }
-
-
