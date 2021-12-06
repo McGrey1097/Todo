@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo/views/Home_View_Darkmode.dart';
 
 class CreateTodoView extends StatelessWidget {
   const CreateTodoView({Key? key}) : super(key: key);
@@ -152,7 +153,11 @@ class CreateTodoView extends StatelessWidget {
                           color: Color.fromRGBO(140, 140, 140, 1),
                         )),
                     IconButton(
-                        onPressed: null,
+                        onPressed: (){
+                        Navigator.of(context).push(
+                        MaterialPageRoute(
+                      builder: (BuildContext context) => HomeViewDarkmode()),
+                           );},
                         icon: Icon(
                           Icons.dark_mode_outlined,
                           size: 30,
